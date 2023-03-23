@@ -3,13 +3,13 @@ package com.example.a52.ui.fragments.episode
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.a52.App
-import com.example.a52.models.episode.EpisodeModel
 import com.example.a52.models.RickAndMortyResponse
+import com.example.a52.models.episode.EpisodeModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class EpisodeViewModel : ViewModel() {
+class EpisodeViewModel: ViewModel() {
 
     fun fetchEpisode(): MutableLiveData<RickAndMortyResponse<EpisodeModel>> {
         val data: MutableLiveData<RickAndMortyResponse<EpisodeModel>> = MutableLiveData()

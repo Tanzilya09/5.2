@@ -3,13 +3,13 @@ package com.example.a52.ui.fragments.location
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.a52.App
-import com.example.a52.models.location.LocationModel
 import com.example.a52.models.RickAndMortyResponse
+import com.example.a52.models.location.LocationModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class LocationViewModel : ViewModel() {
+class LocationViewModel: ViewModel() {
 
     fun fetchLocation(): MutableLiveData<RickAndMortyResponse<LocationModel>> {
         val data: MutableLiveData<RickAndMortyResponse<LocationModel>> = MutableLiveData()
@@ -31,4 +31,5 @@ class LocationViewModel : ViewModel() {
             })
         return data
     }
+
 }
