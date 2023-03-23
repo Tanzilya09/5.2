@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.character.CharacterFragment">
+    tools:context=".ui.fragments.episode.EpisodeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_character"
+        android:id="@+id/rv_episode"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/black"
@@ -15,6 +15,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_character" />
+        tools:listitem="@layout/item_episode"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

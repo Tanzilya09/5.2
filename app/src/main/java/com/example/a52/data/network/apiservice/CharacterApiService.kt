@@ -8,5 +8,4 @@ interface CharacterApiService {
 
     @GET("api/character")
     fun fetchCharacters(): retrofit2.Call<RickAndMortyResponse<CharacterModel>>
-
 }

@@ -3,8 +3,8 @@ package com.example.a52.ui.fragments.character
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.a52.App
-import com.example.a52.models.character.CharacterModel
 import com.example.a52.models.RickAndMortyResponse
+import com.example.a52.models.character.CharacterModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -31,4 +31,5 @@ class CharacterViewModel : ViewModel() {
             })
         return data
     }
+
 }

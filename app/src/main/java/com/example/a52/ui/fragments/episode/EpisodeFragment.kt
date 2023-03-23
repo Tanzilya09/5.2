@@ -1,26 +1,27 @@
 package com.example.a52.ui.fragments.episode
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.a52.databinding.FragmentEpisodeBinding
+import com.example.a52.databinding.FragmentEpisodesBinding
 import com.example.a52.ui.adapters.EpisodeAdapter
+
 
 class EpisodeFragment : Fragment() {
 
     private var viewModel: EpisodeViewModel? = null
-    private lateinit var binding: FragmentEpisodeBinding
+    private lateinit var binding: FragmentEpisodesBinding
     private val episodeAdapter = EpisodeAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentEpisodeBinding.inflate(inflater, container, false)
+        binding = FragmentEpisodesBinding.inflate(inflater, container, false)
         viewModel = ViewModelProvider(this)[EpisodeViewModel::class.java]
         return binding.root
     }
@@ -45,4 +46,3 @@ class EpisodeFragment : Fragment() {
     }
 
 }
-
