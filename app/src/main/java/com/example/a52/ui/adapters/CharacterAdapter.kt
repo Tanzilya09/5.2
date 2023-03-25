@@ -19,10 +19,10 @@ class CharacterAdapter: RecyclerView.Adapter<CharacterAdapter.CharacterViewHolde
     inner class CharacterViewHolder(private val binding: ItemCharacterBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(characterModel: CharacterModel) {
-            binding.itemName.text = characterModel.name
-            binding.tvFirstSeen.text = characterModel.status
-            binding.tvLocation.text = characterModel.gender
-            binding.itImage.setImage(characterModel.image)
+            binding.txtName.text = characterModel.name
+            binding.txtFirstSeen.text = characterModel.status
+            binding.txtLocation.text = characterModel.gender
+            binding.image.setImage(characterModel.image)
         }
     }
 
