@@ -31,7 +31,7 @@
                 tools:ignore="SmallSp" />
 
             <TextView
-                android:id="@+id/tv_created"
+                android:id="@+id/txt_created"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -47,12 +47,12 @@
                 android:text=""
                 android:textColor="#686666"
                 android:textSize="8sp"
-                app:layout_constraintStart_toStartOf="@id/tv_created"
-                app:layout_constraintTop_toBottomOf="@id/tv_created"
+                app:layout_constraintStart_toStartOf="@id/txt_created"
+                app:layout_constraintTop_toBottomOf="@id/txt_created"
                 tools:ignore="SmallSp" />
 
             <TextView
-                android:id="@+id/tv_name"
+                android:id="@+id/txt_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -65,7 +65,7 @@
                 android:id="@+id/air_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                app:layout_constraintTop_toBottomOf="@id/txt_name"
                 android:text=""
                 android:textColor="#686666"
                 android:textSize="8sp"
