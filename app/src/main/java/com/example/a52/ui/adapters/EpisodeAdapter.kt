@@ -18,10 +18,10 @@ class EpisodeAdapter  : RecyclerView.Adapter<EpisodeAdapter.EpisodeViewHolder>()
    inner class EpisodeViewHolder(private val binding: ItemEpisodeBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(episodeModel: EpisodeModel) {
-            binding.tvEpisode.text = episodeModel.episode
-            binding.tvAirDate.text = episodeModel.airDate
-            binding.tvCreated.text = episodeModel.created
-            binding.tvName.text = episodeModel.name
+            binding.txtEpisode.text = episodeModel.episode
+            binding.txtAirDate.text = episodeModel.airDate
+            binding.txtCreated.text = episodeModel.created
+            binding.txtName.text = episodeModel.name
         }
     }
 
